@@ -41,29 +41,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsOrCastExample.cs" />
+    <Compile Include="BigIntegerExample.cs" />
+    <Compile Include="BreakAndContinueExample.cs" />
     <Compile Include="CallerInfoAttributesExample.cs" />
     <Compile Include="ChangingThreadCultureExample.cs" />
+    <Compile Include="ConditionalAttributeExample.cs" />
+    <Compile Include="ConditionalOperatorExample.cs" />
+    <Compile Include="ConstructorExample.cs" />
+    <Compile Include="ConvertingBaseTypesToBinaryExample.cs" />
     <Compile Include="CopyingArraysExample.cs" />
+    <Compile Include="CustomFormatExample.cs" />
     <Compile Include="DateTimeMinValueExample.cs" />
+    <Compile Include="DateTimeStylesExample.cs" />
     <Compile Include="DemoSupportCode\BadHashPerson.cs" />
+    <Compile Include="DemoSupportCode\Class1.cs" />
+    <Compile Include="DemoSupportCode\DemoFileArray.cs" />
     <Compile Include="DemoSupportCode\ExceptionRethrowWidget.cs" />
+    <Compile Include="DemoSupportCode\FakeLogger.cs" />
+    <Compile Include="DemoSupportCode\NaughtyWordCensorFormatProvider.cs" />
+    <Compile Include="DemoSupportCode\Nested\Class1.cs" />
+    <Compile Include="DemoSupportCode\Person.cs" />
     <Compile Include="DemoSupportCode\PersonIdBetterHash.cs" />
+    <Compile Include="DemoSupportCode\Student.cs" />
     <Compile Include="ExternalProgramExample.cs" />
     <Compile Include="FlagsEnumExample.cs" />
+    <Compile Include="FormattingColumnsExample.cs" />
     <Compile Include="GetHashCodeDictionaryExample.cs" />
+    <Compile Include="IndexerExample.cs" />
     <Compile Include="InitializingMultidimensionalArraysExample.cs" />
     <Compile Include="InternalsExample.cs" />
     <Compile Include="DemoSupportCode\CallerInfoAttributeDemo.cs" />
     <Compile Include="DemoSupportCode\CallerInfoAttributeDemo2.cs" />
     <Compile Include="LinqReEvaluationExample.cs" />
+    <Compile Include="NamespaceAliasingExample.cs" />
+    <Compile Include="NumberStylesExample.cs" />
     <Compile Include="ObjectReferenceEqualsExample.cs" />
     <Compile Include="ObsoleteAttributeExample.cs" />
+    <Compile Include="ParamsExample.cs" />
+    <Compile Include="ParseExactDateTimeExample.cs" />
     <Compile Include="PartialTypeExample.cs" />
     <Compile Include="DemoSupportCode\APartialType.generated.cs" />
     <Compile Include="DemoSupportCode\APartialType.cs" />
+    <Compile Include="PathExample.cs" />
     <Compile Include="PreprocessorDirectivesExample.cs" />
     <Compile Include="RandomNumbersExample.cs" />
     <Compile Include="RethrowingExceptionsExample.cs" />
+    <Compile Include="RoundTripDateTimeParsingExample.cs" />
     <Compile Include="RuntimeConversionsExample.cs" />
     <Compile Include="DontCallVirtualMethodsFromCtorExample.cs" />
     <Compile Include="NullCoalescingOperatorExample.cs" />
@@ -76,11 +100,23 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StaticArrayMethodsExample.cs" />
     <Compile Include="StringIsNullOrEmptyExample.cs" />
+    <Compile Include="SystemEnvironmentExample.cs" />
     <Compile Include="ThreePartNumericFormatStringExample.cs" />
     <Compile Include="TuplesExample.cs" />
     <Compile Include="UnicodeValidityExample.cs" />
+    <Compile Include="YieldExample.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AssemblyA\AssemblyA.csproj">
+      <Project>{38ad71e2-d37a-4dcb-bc7e-318633bfe1ef}</Project>
+      <Name>AssemblyA</Name>
+      <Aliases>APeople</Aliases>
+    </ProjectReference>
+    <ProjectReference Include="..\AssemblyB\AssemblyB.csproj">
+      <Project>{afe46655-6773-40b0-bd60-0dfb2f1bc115}</Project>
+      <Name>AssemblyB</Name>
+      <Aliases>BPeople</Aliases>
+    </ProjectReference>
     <ProjectReference Include="..\SomeInternalThings\SomeInternalThings.csproj">
       <Project>{88b2b46a-d8cb-4bb2-af88-3aca87041681}</Project>
       <Name>SomeInternalThings</Name>
